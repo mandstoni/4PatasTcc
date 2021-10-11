@@ -10,7 +10,7 @@ angular.module('app.routes', [])
     
 
       .state('page1', {
-    url: '/login',
+    url: '/login1',
     templateUrl: 'templates/page1.html',
     controller: 'page1Ctrl'
   })
@@ -27,6 +27,24 @@ angular.module('app.routes', [])
     controller: 'page3Ctrl'
   })
 
+  .state('page7', {
+    url: '/raca',
+    templateUrl: 'templates/page7.html',
+    controller: 'page7Ctrl'
+  })
+
+  .state('page8', {
+    url: '/idade',
+    templateUrl: 'templates/page8.html',
+    controller: 'page8Ctrl'
+  })
+
+  .state('page10', {
+    url: '/tamanho',
+    templateUrl: 'templates/page10.html',
+    controller: 'page10Ctrl'
+  })
+
   .state('page4', {
     url: '/login',
     templateUrl: 'templates/page4.html',
@@ -39,7 +57,25 @@ angular.module('app.routes', [])
     controller: 'page5Ctrl'
   })
 
-$urlRouterProvider.otherwise('/login')
+  .state('page11', {
+    url: '/usuario1',
+    templateUrl: 'templates/page11.html',
+    controller: 'page11Ctrl'
+  })
+
+  .state('page12', {
+    url: '/usuario2',
+    templateUrl: 'templates/page12.html',
+    controller: 'page12Ctrl'
+  })
+
+  .state('page9', {
+    url: '/page9',
+    templateUrl: 'templates/page9.html',
+    controller: 'page9Ctrl'
+  })
+
+$urlRouterProvider.otherwise('/login1')
 
 
 });
